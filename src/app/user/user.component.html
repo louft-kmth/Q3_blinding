@@ -1,0 +1,17 @@
+<p>
+    <img [src]="imageSrc" [alt]="name" />
+  </p>
+  <h1>
+    <p>NOM: {{name}}</p>
+    <P>Prénom : {{firstname}}</P>
+  </h1>
+  <div >
+    <p>{{quote}}</p>
+    <input type="text" placeholder="Entrez une description" [(ngModel)]="quote">
+  </div>
+  
+  
+  <button (click)="show = !show">{{ show ? 'Afficher/Masquer âge':'Afficher/Masquer âge'  }}</button>
+    <br />
+      <div *ngIf="show">age : {{age}}</div>
+  
